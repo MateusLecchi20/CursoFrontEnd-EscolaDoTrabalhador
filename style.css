@@ -1,0 +1,63 @@
+:root {
+    --green: #00ff00;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, p{
+    text-align: center;
+    margin: 0, auto;
+}
+
+body {
+    background: var(--bg);
+    margin-top: 75px;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor:var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.light-theme .btn:hover {
+    --bg: var(--white);
+    --fontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.dark-theme .btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn:focus {
+    outline-style: none;
+}
